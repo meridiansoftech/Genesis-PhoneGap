@@ -8,7 +8,7 @@ https://github.com/phonegap/phonegap-start/
 
 ### Customizations
 
-- ### HTML
+#### HTML
 
 __index.html__
 
@@ -17,7 +17,7 @@ Other html views are stored in:
     
     /www/html/*.html
 
-- ### JavaScript
+#### JavaScript
 
 __Backbone.js__
 
@@ -30,7 +30,7 @@ __and its dependencies__
     /www/js/vendor/jquery.js
     /www/js/vendor/underscore.min.js
     
-- ### CSS
+#### CSS
 
 __Dripicons__
 
@@ -45,5 +45,3 @@ http://foundation.zurb.com > Currently at version 5, includes Responsive-Grid la
 
     /www/css/normalize.css
     /www/css/foundation.css
-
-### Run Tests
