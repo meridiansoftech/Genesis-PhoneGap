@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" type="text/css" href="css/dripicons-webfont.css" />
     
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/hacks.css" />
     <link rel="stylesheet" type="text/css" href="css/app.css" />
     <title>Genesis for PhoneGap</title>
 </head>
@@ -18,7 +18,21 @@
 
     <section id="AppContainer">
         
+        <grid class="row">
+            <grid class="small-6 large-6 columns small-centered">
+                <h1 class="text-center white">
+                    <span class="icon icon-home"></span>
+                    <br>
+                    Welcome to <br>Genesis for PhoneGap
+                </h1>
+            </grid>
+        </grid>
+        
         <!-- Views rendered here -->
+        <script id="introTemplate" type="text/template">
+            <img src="<%= photo %>" alt="<%= name %>">
+            <h1>Welcome to Genesis for PhoneGap</h1>
+        </script>
         
     </section>
     
@@ -26,7 +40,10 @@
     <script type="text/javascript" src="js/vendor/jquery.js"></script>
     <script type="text/javascript" src="js/vendor/underscore.min.js"></script>
     <script type="text/javascript" src="js/vendor/backbone.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/models/models.js"></script>
+    <script type="text/javascript" src="js/views/views.js"></script>
+    <script type="text/javascript" src="js/collections/collections.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     
 </body>
 </html>
