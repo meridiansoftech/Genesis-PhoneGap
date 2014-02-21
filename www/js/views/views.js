@@ -1,10 +1,10 @@
 // This view turns a Service model into HTML. Will create LI elements.
 var QuoteView = Backbone.View.extend({
     tagName: 'li',
-    className: 'alert-box secondary',
+    className: 'alert-box info radius',
 
     events:{
-        'click': 'toggleService'
+        'click': 'toggleUI'
     },
 
     initialize: function(){
@@ -19,7 +19,7 @@ var QuoteView = Backbone.View.extend({
 
         // Create the HTML
 
-        this.$el.html('<blockquote>' + this.model.get('message') + '<blockquote/>' + '<p>' + this.model.get('orator') + '<p/>');
+        this.$el.html('<p>' + this.model.get('message') + '<p/>' + '<em>' + this.model.get('orator') + '<em/>');
         // this.$('input').prop('checked', this.model.get('checked'));
 
         // Returning the object is a good practice
@@ -27,7 +27,7 @@ var QuoteView = Backbone.View.extend({
         return this;
     },
 
-    toggleService: function(){
+    toggleUI: function(){
         this.model.toggle();
     }
 });

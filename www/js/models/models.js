@@ -5,9 +5,9 @@ var Quote = Backbone.Model.extend({
     // These are their default values
 
     defaults:{
-        message: 'Getting started with Foundation is easy',
-        orator: 'Foundation Team',
-        url: 'http://foundation.zurb.com/docs/'
+        message: '',
+        orator: '',
+        url: ''
     },
 
     // Helper function for checking/unchecking a service
